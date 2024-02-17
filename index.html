@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <section class="flex">
+        <a href="#home" class="logo">Islam Rady</a>
+
+        <nav class="navbar">
+          <a href="#home">home</a>
+          <a href="#about">about</a>
+          <a href="#courses">courses</a>
+          <a href="#teachers">teachers</a>
+          <a href="#reviews">reviews</a>
+          <a href="#contact">contact</a>
+        </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+      </section>
+    </header>
+
+    <section class="home" id="home">
+      <div class="row">
+        <div class="content">
+          <h3>
+            Your Future Changes Here. <span>Start Changing life Today!</span>
+          </h3>
+          <a href="#contact" class="btn">contact us</a>
+        </div>
+        <div class="image">
+          <img src="images/undraw_developer_activity_re_39tg.svg" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="row">
+        <div class="image">
+          <img src="/images/about-img.svg" alt="" />
+        </div>
+        <div class="content">
+          <h3>Why Choosing us</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+            placeat, perspiciatis nihil fuga porro recusandae debitis repellat,
+            culpa delectus iusto ut maiores impedit laborum facilis nostrum,
+            temporibus unde quos voluptatum.
+          </p>
+          <a href="#" class="btn">Contact us</a>
+        </div>
+      </div>
+    </section>
+    <section class="courses" id="courses">
+      <h1 class="heading">our <span>courses</span></h1>
+      <div class="swiper course-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <img src="images/course-1.svg" alt="" />
+            <h3>Web Development</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+              doloribus optio. Consequatur labore quia ipsam repellat libero
+              autem odit doloremque quo ut, quis voluptatum. At reiciendis quae
+              repudiandae impedit sint!
+            </p>
+          </div>
+          <div class="swiper-slide slide">
+            <img src="images/course-2.svg" alt="" />
+            <h3>Digital markting</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+              doloribus optio. Consequatur labore quia ipsam repellat libero
+              autem odit doloremque quo ut, quis voluptatum. At reiciendis quae
+              repudiandae impedit sint!
+            </p>
+          </div>
+          <div class="swiper-slide slide">
+            <img src="images/course-3.svg" alt="" />
+            <h3>Science and Biology</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+              doloribus optio. Consequatur labore quia ipsam repellat libero
+              autem odit doloremque quo ut, quis voluptatum. At reiciendis quae
+              repudiandae impedit sint!
+            </p>
+          </div>
+          <div class="swiper-slide slide">
+            <img src="images/course-4.svg" alt="" />
+            <h3>Graphic Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+              doloribus optio. Consequatur labore quia ipsam repellat libero
+              autem odit doloremque quo ut, quis voluptatum. At reiciendis quae
+              repudiandae impedit sint!
+            </p>
+          </div>
+          <div class="swiper-slide slide">
+            <img src="images/course-5.svg" alt="" />
+            <h3>Teaching</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+              doloribus optio. Consequatur labore quia ipsam repellat libero
+              autem odit doloremque quo ut, quis voluptatum. At reiciendis quae
+              repudiandae impedit sint!
+            </p>
+          </div>
+          <div class="swiper-slide slide">
+            <img src="images/course-6.svg" alt="" />
+            <h3>Engineering</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+              doloribus optio. Consequatur labore quia ipsam repellat libero
+              autem odit doloremque quo ut, quis voluptatum. At reiciendis quae
+              repudiandae impedit sint!
+            </p>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h1 class="heading"><span>contact</span> us</h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="images/undraw_contact_us_re_4qqt.svg" alt="" />
+        </div>
+
+        <form action="" method="post">
+          <span>your name</span>
+          <input
+            type="text"
+            required=""
+            placeholder="enter your full name"
+            maxlength="50"
+            name="name"
+            class="box"
+          />
+          <span>your email</span>
+          <input
+            type="email"
+            required=""
+            placeholder="enter your valid email"
+            maxlength="50"
+            name="email"
+            class="box"
+          />
+          <span>your number</span>
+          <input
+            type="number"
+            required=""
+            placeholder="enter your valid number"
+            max="9999999999"
+            min="0"
+            name="number"
+            class="box"
+            onkeypress="if(this.value.length == 10) return false;"
+          />
+          <span>select course</span>
+          <select name="couses" class="box" required="">
+            <option value="" disabled="" selected="">
+              select the course --
+            </option>
+            <option value="Class 5">Class 5</option>
+            <option value="Class 6">Class 6</option>
+            <option value="Class 7">Class 7</option>
+            <option value="Class 8">Class 8</option>
+            <option value="Class 9">Class 9</option>
+            <option value="Class 10">Class 10</option>
+            <option value="Class 11">Class 11</option>
+            <option value="Class 12">Class 12</option>
+          </select>
+          <span>select gender</span>
+          <div class="radio">
+            <input type="radio" name="gender" value="male" id="male" />
+            <label for="male">male</label>
+            <input type="radio" name="gender" value="female" id="female" />
+            <label for="female">female</label>
+          </div>
+          <input type="submit" value="send message" class="btn" name="send" />
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <section>
+        <div class="share">
+          <a href="https://www.x.com/0xSolom" class="fab fa-twitter"></a>
+          <a
+            href="https://www.instagram.com/0xSolom"
+            class="fab fa-instagram"
+          ></a>
+        </div>
+
+        <div class="credit">
+          © copyright 2024 by <span>Islam Rady</span> | all rights reserved!
+        </div>
+      </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
